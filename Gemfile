@@ -4,6 +4,7 @@ ruby "2.3.1"
 
 gem "accesslint-ci", "0.2.8"
 gem "bourbon", "~> 5.0.0.beta.7"
+gem "builder", "~> 3.0"
 gem "middleman", "~> 4.2"
 gem "middleman-aria_current", "~> 0.1"
 gem "middleman-autoprefixer", "~> 2.7"

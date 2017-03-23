@@ -1,7 +1,9 @@
 activate :aria_current
 activate :autoprefixer
 activate :blog do |blog|
-  blog.prefix = "blog"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
+  blog.taglink = "categories/{tag}.html"
 end
 
 set :css_dir, "assets/stylesheets"
