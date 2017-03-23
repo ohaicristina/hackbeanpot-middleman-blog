@@ -1,5 +1,8 @@
 activate :aria_current
 activate :autoprefixer
+activate :blog do |blog|
+  blog.prefix = "blog"
+end
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"
