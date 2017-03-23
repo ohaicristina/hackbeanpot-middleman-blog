@@ -1,4 +1,10 @@
-# Middleman Template
+# Presenting: Styling a Middleman Blog with Bourbon, Neat and Bitters
+
+Blog example for Hack Beanpot talk using thoughtbot's [Middleman Template Repo] as a base.
+
+  [Middleman Template Repo]: https://github.com/thoughtbot/middleman-template
+
+## Uses thoughtbot's Middleman Template as a base
 
 The base Middleman application used at [thoughtbot], ready to deploy
 to [Netlify].
@@ -15,6 +21,7 @@ This template comes with the following features and tools:
 - [middleman-aria_current]: An extension for indicating a current (active) link
   using `aria-current`.
 - [middleman-autoprefixer]: Automatically vendor-prefix stylesheets.
+- [middleman-blog]: Extension to add blog functionality to Middleman
 - [middleman-livereload]: Automatically refresh the browser as soon as you save
   a file.
 - [middleman-minify-html]: Minifies whitespace around HTML when the site is
@@ -34,6 +41,7 @@ This template comes with the following features and tools:
 
   [middleman-aria_current]: https://github.com/thoughtbot/middleman-aria_current
   [middleman-autoprefixer]: https://github.com/middleman/middleman-autoprefixer
+  [middleman-blog]: https://github.com/middleman/middleman-blog
   [middleman-livereload]: https://github.com/middleman/middleman-livereload
   [middleman-minify-html]: https://github.com/middleman/middleman-minify-html
   [SassC]: https://github.com/sass/sassc
@@ -47,14 +55,6 @@ This template comes with the following features and tools:
   [AccessLint]: https://accesslint.com/
   [Hound]: https://houndci.com/repos
   [Segment]: https://segment.com/
-
-## Contributing
-
-See the [contributing document].
-Thank you, [contributors]!
-
-  [contributing document]: CONTRIBUTING.md
-  [contributors]: https://github.com/thoughtbot/middleman-aria_current/graphs/contributors
 
 ## License
 
