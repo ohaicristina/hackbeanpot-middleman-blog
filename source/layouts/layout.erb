@@ -4,13 +4,41 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>thoughtbot Middleman Template</title>
+    <title>Cristina's Bloggo</title>
     <%= stylesheet_link_tag "main" %>
   </head>
   <body>
+
     <main role="main">
-      <%= yield %>
+    <aside>
+      <div class="bio">
+        <h1>Cristina's Super Bloggo</h1>
+        <h2>Designer who likes to code</h2>
+
+        <p>Likes: Cars, Biking, Narragansett, Cooking &amp; Trying to Keep Her
+        Plants Alive</p>
+      </div>
+
+      <div class="blog-links">
+        <div class="blog-tags">
+          <h2>Tags:</h2>
+          <% blog.tags.each do |tag, articles| %>
+            <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
+          <% end %>
+        </div>
+        <ul class="social-links">
+          <li>Twitter</li>
+          <li>Dribbble</li>
+          <li>Insta</li>
+          <li>Github</li>
+        </ul>
+      </div>
+    </aside>
+
+    <%= yield %>
+
     </main>
+
     <%= partial "partials/analytics" %>
   </body>
 </html>
