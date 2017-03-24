@@ -12,9 +12,24 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: modular-scale(1);
+  font-size: modular-scale(1); //bourbon function to increment up or down a
+  //defined scale
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+}
+
+
+$type-ratio: $perfect-fourth;
+$base-font-size: 1em;
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: modular-scale(4 - $i, $base-font-size, $type-ratio);
+  }
+}
+
+h4 {
+  margin-bottom: 0;
 }
 
 p {

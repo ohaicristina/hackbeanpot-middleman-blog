@@ -1,6 +1,7 @@
 ---
 title: Design is cool
 date: 2017-03-22
+layout: post
 tags: design
 ---
 

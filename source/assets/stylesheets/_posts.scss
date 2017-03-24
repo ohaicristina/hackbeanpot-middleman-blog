@@ -1,0 +1,13 @@
+.post-wrapper {
+  @include grid-container;
+}
+
+.post-navigation {
+  @include grid-column(2);
+  @include grid-push(1);
+}
+
+.post-content {
+  @include grid-column(5);
+  @include grid-push(1);
+}

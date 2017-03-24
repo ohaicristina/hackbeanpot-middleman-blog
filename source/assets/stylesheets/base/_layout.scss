@@ -4,7 +4,6 @@ html {
 
 body {
   border: 40px solid white;
-  overflow-y: hidden;
 }
 
 *,
@@ -17,3 +16,14 @@ html,
 body {
   height: 100%;
 }
+
+aside {
+  height: calc(100vh - 80px);
+  padding: $base-spacing;
+}
+
+section {
+  @include grid-container;
+  flex: 1 1;
+}
+

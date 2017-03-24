@@ -1,31 +1,28 @@
-main {
+.main-page {
+  overflow-y: hidden;
+}
+
+.content {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-aside {
+.index-navigation {
   background-color: $pink;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: $base-spacing;
   flex: 0 0 27%;
-  height: calc(100vh - 80px);
+  justify-content: space-between;
 }
 
 .bio {
-  @include margin($large-spacing $base-spacing null);
+  @include margin($base-spacing $base-spacing null);
 }
 
 .blog-links {
   background-color: #fff;
   padding: $base-spacing;
-}
-
-section {
-  @include grid-container;
-  flex: 1 1;
 }
 
 .post-wrapper {
@@ -39,4 +36,14 @@ section {
   @include margin($base-spacing null);
   @include padding(null null $base-spacing $large-spacing);
   border-bottom: 5px solid $yellow;
+}
+
+.blog-tags {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: $base-spacing;
+  padding-bottom: $base-spacing;
+
+  li {
+    list-style: none;
+  }
 }
