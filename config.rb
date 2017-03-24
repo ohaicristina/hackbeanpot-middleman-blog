@@ -4,6 +4,7 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   blog.taglink = "categories/{tag}.html"
+  blog.summary_separator = /READ_MORE/
 end
 
 set :css_dir, "assets/stylesheets"
